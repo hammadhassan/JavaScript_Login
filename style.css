@@ -1,0 +1,10 @@
+body {
+    background: midnightblue;
+    margin: 0 auto;
+}
+.cont {
+    height: 500px;
+    width: 400px;
+    margin: 0 auto;
+    border: 5px double crimson;
+}
