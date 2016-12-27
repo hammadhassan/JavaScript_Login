@@ -1,10 +1,29 @@
 body {
-    background: midnightblue;
+    background-color: midnightblue;
     margin: 0 auto;
+    font-family: sans-serif, serif;
+    font-size: 20px;
+    font-style: oblique;
 }
 .cont {
     height: 500px;
     width: 400px;
     margin: 0 auto;
     border: 5px double crimson;
+    background-color: snow
+}
+.field {
+    margin: 0 auto;
+    height: 400px;
+    width: 400px;
+}
+#name {
+    border-color: royalblue;
+    border-radius: 5px;
+    border-style: solid;
+    font-size: 16px;
+    height: 24px;
+    /*margin: 10px 0px 0px 754px;
+    padding: 8px 10px;
+    width: 377px;*/
 }
