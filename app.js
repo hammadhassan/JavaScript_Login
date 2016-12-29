@@ -6,7 +6,7 @@ if (name === "" || name === "  " || name === " ") {
     alert("Please Enter Name");
 } else {
     name;
-    //name.value= "";
+    name.value= "";
     };
 //Email
 var mail = document.getElementById("mail").value;
@@ -38,7 +38,7 @@ function signup() {
 }
 //Login
 function login() {
-    if (newmail === mail && newpass === pass) {
+    if (document.getElementById("mail").value === newmail || document.getElementById("pass") === newpass) {
      alert("Success");
     }
     else {
