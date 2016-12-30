@@ -32,13 +32,13 @@ function signup() {
     var mail1 = mail;
     var pass1 = passw;
     alert("submit");
-    mail.value = "";
+    mail.value = " ";
     pass.value = "";
-    name.value = "";
+    name.value = " ";
 }
 //Login
 function login() {
-    if (document.getElementById("mail").value === newmail || document.getElementById("pass") === newpass) {
+    if (mail === newmail || passw === newpass) {
      alert("Success");
     }
     else {
