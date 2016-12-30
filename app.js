@@ -1,44 +1,37 @@
-function name1() {
-}
-//Name
 var name = document.getElementById("name").value;
-if (name === "" || name === "  " || name === " ") {
-    alert("Please Enter Name");
-} else {
-    name;
-    name.value= "";
-    };
-//Email
+var Name = name;
 var mail = document.getElementById("mail").value;
-if (mail === "" || mail === "  " || mail === " ") {
-    alert("Please Enter Email");
-} else {
-    mail;
-    var newmail = mail;
-    //mail.value= "";
-    };
- //Password
- var passw = document.getElementById("pass").value;
-if (passw === "" || passw === "  " || passw === " ") {
-    alert("Please Enter Password");
-} else {
-    passw;
-    var newpass = pass;
-    //passw.value= "";
-    };   
+var Mail = mail;
+var passw = document.getElementById("pass").value;   
+var Pass = passw;
 //Signup 
 function signup() {
-    var name1 = name;
-    var mail1 = mail;
-    var pass1 = passw;
+///Name
+//     if (Name === "" || Name === "  " || Name === " ") {
+//         alert("Please Enter Name");
+//     } else {
+//         var name1 = Name;
+//         name.value= "";
+//         }
+// //Email
+//     if (Mail === "" || Mail === "  " || Mail === " ") {
+//         alert("Please Enter Email");
+//     } else {
+//         var mail1 = Mail;
+//         mail.value = "";
+//         }
+// //Password
+//     if (Pass === "" || Pass === "  " || Pass === " ") {
+//         alert("Please Enter Password");
+//     } else {
+//         var pass1 = Pass;
+//         passw.value = "";
+//     }
     alert("submit");
-    mail.value = " ";
-    pass.value = "";
-    name.value = " ";
 }
 //Login
 function login() {
-    if (mail === newmail || passw === newpass) {
+    if (document.getElementById("mail1").value === mail && document.getElementById("pass1").value === passw) {
      alert("Success");
     }
     else {
