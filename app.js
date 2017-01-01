@@ -1,11 +1,39 @@
-var name = document.getElementById("name").value;
-var Name = name;
-var mail = document.getElementById("mail").value;
-var Mail = mail;
-var passw = document.getElementById("pass").value;   
-var Pass = passw;
+var userinfo = [];
 //Signup 
 function signup() {
+    var obj = {
+        name : document.getElementById("name").value,
+        mail: document.getElementById("mail").value,
+        pass: document.getElementById("pass").value
+    }
+    if (localStorage.user == undefined) {
+        userinfo.push(obj)
+        localStorage.setItem("user", JSON.stringify(userinfo))
+        location.href = "login.html"
+    } else {
+        var data = JSON.parse(localStorage.user);
+        userinfo = data
+        userinfo.push(obj)
+        localStorage.setItem("user", JSON.stringify(userinfo))
+        location.href = "login.html"
+    }
+}
+//login
+function login() {
+    var obj = {
+        email: document.getElementById("mail1").value,
+        pass: document.getElementById("pass1").value
+    }
+    var data = JSON.parse(localStorage.getItem("user"))
+    for (i = 0; i < data.length; i++) {
+        if (obj.email == data[i].email && obj.pass == data[i].pass) {
+            alert("Login")
+        } else {
+            console.log("Please Check email or Password")
+        }
+        //console.log(data[i].email)
+    }
+}
 ///Name
 //     if (Name === "" || Name === "  " || Name === " ") {
 //         alert("Please Enter Name");
@@ -27,14 +55,14 @@ function signup() {
 //         var pass1 = Pass;
 //         passw.value = "";
 //     }
-    alert("submit");
-}
-//Login
-function login() {
-    if (document.getElementById("mail1").value === mail && document.getElementById("pass1").value === passw) {
-     alert("Success");
-    }
-    else {
-    alert("Please Enter Correct info")
-    }
-}
+//     alert("submit");
+// }
+// //Login
+// function login() {
+//     if (document.getElementById("mail1").value === mail && document.getElementById("pass1").value === passw) {
+//      alert("Success");
+//     }
+//     else {
+//     alert("Please Enter Correct info")
+//     }
+// }
