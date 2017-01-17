@@ -1,21 +1,22 @@
 body {
-    background-color: midnightblue;
+    background-color: #333333;
     margin: 0 auto;
     font-family: sans-serif, serif;
     font-size: 20px;
     font-style: oblique;
 }
 .cont {
-    height: 500px;
-    width: 400px;
-    margin: 0 auto;
-    border: 5px double crimson;
-    background-color: snow
+    height: 300px;
+    width: 300px;
+    margin: 100px auto;
+    /*border: 5px double crimson;*/
+    background-color: white;
+    box-shadow: 7px ;
+    text-align: center;
 }
 .field {
     margin: 0 auto;
-    height: 400px;
-    width: 400px;
+
 }
 #name {
     border-color: royalblue;
